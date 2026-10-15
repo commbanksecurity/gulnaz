@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,400;1,600&display=swap');
+
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+}
+
+body {
+  color: #2a1120;
+  background-color: #fff8fa;
+  font-family: var(--font-plus-jakarta);
+  overflow-x: hidden;
+  selection-background-color: #fbcfe8;
+}
+
+::selection {
+  background-color: #f472b6;
+  color: #ffffff;
+}
+
+/* Girly Glow Effects */
+.pink-glow {
+  box-shadow: 0 0 35px -5px rgba(244, 114, 182, 0.35);
+}
+
+.pink-glow-sm {
+  box-shadow: 0 0 15px -3px rgba(244, 114, 182, 0.25);
+}
+
+.pink-glow-lg {
+  box-shadow: 0 0 60px -10px rgba(244, 114, 182, 0.45);
+}
+
+.glass-girly {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 214, 228, 0.7);
+}
+
+.glass-girly-dark {
+  background: rgba(43, 14, 29, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 114, 182, 0.3);
+}
+
+.text-gradient-rose {
+  background: linear-gradient(135deg, #d32a66 0%, #a21045 50%, #7c193c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fff0f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #f47da3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d32a66;
+}
